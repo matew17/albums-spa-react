@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Albums } from "./components/albums/Albums";
+
+import "./app.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <section className="main">
+            <nav>Galeria de albumes</nav>
+
+            <section className="content">
+                <Albums />
+            </section>
+
+            <footer>
+                Creado con 💛&nbsp;
+                <b>
+                    <a
+                        href="https://www.instagram.com/orientedev/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        oriente.dev
+                    </a>
+                </b>
+            </footer>
+        </section>
+    );
 }
 
 export default App;
